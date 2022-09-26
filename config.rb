@@ -73,6 +73,10 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
+
+#Use asset hashes to use for caching
+activate :asset_hash
+
 configure :build do
   # Minify css on build
   activate :minify_css
@@ -82,8 +86,4 @@ configure :build do
 
   # Use Gzip
   activate :gzip
-
-  #Use asset hashes to use for caching
-  #activate :asset_hash
-
 end
