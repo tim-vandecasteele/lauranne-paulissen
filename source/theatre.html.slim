@@ -1,0 +1,19 @@
+---
+title: Lauranne Paulissen | Theatre
+---
+
+
+section.homepage-products.products
+  .container
+    h2
+      | Theatre
+    .row.masonry
+      //sort by newest production
+      .container
+        - data.theatre.sort {|(_filename_a, a),(_filename_b, b)| b.date <=> a.date}.each do | _filename, production |
+          // = link_to '/theatre/' + production.title.parameterize + '/'
+
+          figure
+            = image_tag production.front_image
+            figcaption = production.title
+

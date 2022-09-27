@@ -46,6 +46,14 @@ data.products.each do |_filename, product|
   ignore: true
 end
 
+data.theatre.each do |_filename, production|
+  # product is an array: [filename, {data}]
+  proxy "/theatre/#{production[:title].parameterize}/index.html", "production.html",
+  locals: {production: production},
+  layout: 'production-detail',
+  ignore: true
+end
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/

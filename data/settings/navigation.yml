@@ -1,5 +1,8 @@
 nav_items: 
   - {label: 'Home', path: '/'}
+  - {label: 'Theatre', path: '/theatre/'}
+  - {label: 'Film', path: '/film/'}
   - {label: 'Products', path: '/products/'}
+  - {label: 'Contact', path: '/contact/'}
   - {label: 'News', path: '/news'}
 
