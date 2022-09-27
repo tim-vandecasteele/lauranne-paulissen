@@ -11,8 +11,8 @@ section.homepage-products.products
       //sort by newest production
       .container
         - data.theatre.sort {|(_filename_a, a),(_filename_b, b)| b.date <=> a.date}.each do | _filename, production |
-
-          figure
-            = image_tag production.front_image
-            figcaption = link_to production.title, '/theatre/' + production.title.parameterize + '/'
+          = link_to '/theatre/' + production.title.parameterize + '/', class: 'brick' do
+            figure
+              = image_tag production.front_image
+              figcaption = production.title
 
