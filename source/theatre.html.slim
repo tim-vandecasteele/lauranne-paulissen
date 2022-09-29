@@ -9,7 +9,7 @@ section.homepage-products.products
       | Theatre
     .row.masonry
       //sort by newest production
-      .container
+      .masonry-container
         - data.theatre.sort {|(_filename_a, a),(_filename_b, b)| b.date <=> a.date}.each do | _filename, production |
           = link_to '/theatre/' + production.title.parameterize + '/', class: 'brick' do
             figure

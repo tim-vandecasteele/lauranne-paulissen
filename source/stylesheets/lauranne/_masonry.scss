@@ -1,9 +1,4 @@
 .masonry {
-  img {
-    width: 100%;
-    display: block;
-  }
-
   a.brick {
     margin: 0;
     display: block;
@@ -15,12 +10,12 @@
     break-inside: avoid;
     display: grid;
     grid-template-rows: 1fr auto;
-    margin-bottom: 10px;
   }
 
   figure > img {
     grid-row: 1 / -1;
     grid-column: 1;
+    margin-bottom: 10px;
   }
 
   figcaption {
@@ -31,15 +26,16 @@
     justify-self: start;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 10px;
   }
 
-  .container {
+  .masonry-container {
     column-count: 1;
     column-gap: 10px;
   }
 
   @media only screen and (min-width: 768px) {
-    .container {
+    .masonry-container {
       column-count: 2;
     }
 
@@ -49,8 +45,11 @@
   }
 
   @media only screen and (min-width: 900px) {
-    .container {
+    .masonry-container {
       column-count: 3;
+    }
+    .masonry-container-2 {
+      column-count: 2;
     }
   }
 }

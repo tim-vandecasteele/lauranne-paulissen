@@ -1,8 +1,17 @@
-.product-detail
-  .image style=background_image(image_path(production.front_image))
-  .content
-    .meta
-      h1 = production.title
+section
+  .container
+    h1 = production.title
+
+    .masonry
+      .masonry-container.masonry-container-2
+        - production.images.each do |image|
+          figure
+            = image_tag image.path
+            figcaption = image.text
 
     .body
       = markdown production.body if production.body.present?
+
+
+/ https://lauranne.netlify.app/admin
+/ Tim@MarketingForTheWin
