@@ -1,0 +1,17 @@
+---
+title: Lauranne Paulissen | Film
+---
+
+
+section.productions
+    .row.masonry
+      //sort by newest production
+      .masonry-container.masonry-container-2
+        - data.film.sort {|(_filename_a, a),(_filename_b, b)| b.date <=> a.date}.each do | _filename, production |
+          = link_to '/film/' + production.title.parameterize + '/', class: 'brick' do
+            figure
+              = image_tag production.front_image
+              figcaption
+                = production.title
+
+
