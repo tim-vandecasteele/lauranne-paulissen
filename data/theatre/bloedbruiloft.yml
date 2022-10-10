@@ -5,5 +5,5 @@ link:
 producers:
 front_image: /images/uploads/bloedbruiloft-1.jpg
 images:
-    - /images/uploads/bloedbruiloft-1.jpg
+    - path: /images/uploads/bloedbruiloft-1.jpg
 body:

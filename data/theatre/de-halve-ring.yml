@@ -5,5 +5,5 @@ link:
 producers:
 front_image: /images/uploads/de-halve-ring-1.jpg
 images:
-    - /images/uploads/de-halve-ring-1.jpg
+    - path: /images/uploads/de-halve-ring-1.jpg
 body:

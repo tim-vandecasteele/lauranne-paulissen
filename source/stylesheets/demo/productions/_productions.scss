@@ -1,0 +1,7 @@
+.productions {
+  padding: 10px 40px 10px 40px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 10px 10px 10px 10px;
+  }
+}

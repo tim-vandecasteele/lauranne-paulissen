@@ -11,7 +11,7 @@ html
 
     main.main-content
       = yield
-    = partial 'partials/shared/footer'
+    / = partial 'partials/shared/footer'
 
     = javascript_include_tag 'main', async: true
     script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript"

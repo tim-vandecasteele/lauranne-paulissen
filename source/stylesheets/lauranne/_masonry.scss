@@ -16,6 +16,7 @@
     grid-row: 1 / -1;
     grid-column: 1;
     margin-bottom: 10px;
+    max-width: 100%;
   }
 
   figcaption {
@@ -34,13 +35,16 @@
     column-gap: 10px;
   }
 
+  @media only screen and (max-width: 768px) {
+    figure > img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
   @media only screen and (min-width: 768px) {
     .masonry-container {
       column-count: 2;
-    }
-
-    figure > img {
-      max-width: 100%;
     }
   }
 

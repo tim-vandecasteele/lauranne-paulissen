@@ -32,6 +32,8 @@
       color: $text-color;
       &.active, &:hover, &:focus{
         color: $primary-color;
+        text-decoration-line: underline;
+        text-decoration-style: double;
       }
     }
     @media screen and (max-width: $screen-xs-max){

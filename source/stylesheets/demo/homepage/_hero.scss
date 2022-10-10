@@ -10,9 +10,10 @@
     @extend %container;
   }
 
-  h1 {
+  h1, h2 {
     @extend %column;
     @extend %col-xs-8;
+    white-space: nowrap;
     margin: 0;
     padding-top: 20%;
 
@@ -22,7 +23,20 @@
     @media screen and (max-width: $screen-xs-max){
       padding-top: 10%;
     }
+    span {
+      display: inline-block;
+      background-color: white;
+      padding: 5px;
+    }
   }
+
+  h2 {
+    padding-top: 0;
+    span {
+      margin-left: 50px;
+    }
+  }
+
   @media screen and (max-width: 400px){
     padding-bottom: 50%;
   }

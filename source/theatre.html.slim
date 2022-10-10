@@ -3,10 +3,7 @@ title: Lauranne Paulissen | Theatre
 ---
 
 
-section.homepage-products.products
-  .container
-    h2
-      | Theatre
+section.productions
     .row.masonry
       //sort by newest production
       .masonry-container
@@ -14,5 +11,7 @@ section.homepage-products.products
           = link_to '/theatre/' + production.title.parameterize + '/', class: 'brick' do
             figure
               = image_tag production.front_image
-              figcaption = production.title
+              figcaption
+                = production.title
+
 
