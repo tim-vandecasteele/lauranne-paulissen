@@ -1,0 +1,8 @@
+body.dark {
+  text-color: $dark-text-color;
+  background-color: $dark-bg-color;
+
+  .header-primary .navigation a {
+    color: $dark-text-color;
+  }
+}

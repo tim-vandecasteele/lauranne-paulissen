@@ -3,6 +3,7 @@ nav_items:
   - {label: 'Theatre', path: '/theatre/'}
   - {label: 'Film', path: '/film/'}
   # - {label: 'Products', path: '/products/'}
+  - {label: 'Martha de Krankzinnige', path: '/martha-de-krankzinnige/'}
   - {label: 'Contact', path: '/contact/'}
   # - {label: 'News', path: '/news'}
 
