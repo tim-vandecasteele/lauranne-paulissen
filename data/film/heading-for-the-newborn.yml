@@ -1,11 +1,10 @@
 title: Heading for the newborn
 date: 2001-01-01
 actors: With Lukas de Wolf, Lauranne Paulissen, Sofie Joan Wouters et al.
-sub_text: Videoclip by Isbells and Cecilia Verheyden
+producers: Videoclip by Isbells and Cecilia Verheyden
 link:
 producers:
 front_image: /images/uploads/heading-for-the-newborn-1.jpg
 images:
-    - path: /images/uploads/heading-for-the-newborn-1.jpg
-body: |
+trailer: |
     <iframe width="531" height="308" src="https://www.youtube.com/embed/J91B4UoLbzU" title="Isbells - Heading for the Newborn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

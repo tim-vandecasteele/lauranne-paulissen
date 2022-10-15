@@ -2,15 +2,25 @@ section
   .container
     h1 = production.title
 
-    .masonry
-      .masonry-container.masonry-container-2
-        - production.images.each do |image|
-          figure
-            = image_tag image.path
-            figcaption = image.text
+    h2 = production.producers
+    h3 = production.actors
 
-    .body
-      = markdown production.body if production.body.present?
+    - if production.trailer.present?
+      .trailer
+        = markdown production.trailer
+
+    - if production.body.present?
+      .body.description
+        = markdown production.body
+
+    - if production.images.present?
+      .masonry
+        .masonry-container.masonry-container-2
+          - production.images.each do |image|
+            figure
+              = image_tag image.path
+              - if image.text.present?
+                figcaption = image.text
 
 
 / https://lauranne.netlify.app/admin

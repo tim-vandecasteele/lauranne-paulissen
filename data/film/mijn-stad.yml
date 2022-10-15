@@ -1,8 +1,10 @@
 title: Mijn stad
-date: 2001-01-01
-actors: Short film of Fauzia Szpyt and Guy Thys
-link:
-producers:
+date: 2016-01-01
+actors: With Bjarne Devolder, Nina Kortekaas, Lauranne Paulissen, Alain Van Goethem and Katelijne Verbeke.
+links:
+    - link: https://www.imdb.com/title/tt6550668/
+      name: Mijn stad on IMDB
+producers: Short film of Fauzia Szpyt and Guy Thys
 front_image: /images/uploads/mijn-stad-1.jpg
 images:
     - path: /images/uploads/mijn-stad-1.jpg

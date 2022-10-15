@@ -3,9 +3,8 @@ date: 2001-01-01
 actors: With Evgenia Brendes, Julia Ghysels, Simon Lemmens, Lauranne Paulissen, Sofie Joan Wouters et al.
 sub_text: Videoclip by Isbells and Cecilia Verheyden
 link:
-producers:
+producers: Videoclip by Isbells and Cecilia Verheyden
 front_image: /images/uploads/heart-attacks-1.jpg
 images:
-    - path: /images/uploads/heart-attacks-1.jpg
-body: |
+trailer: |
     <iframe width="531" height="308" src="https://www.youtube.com/embed/ICJRzb35d4Y" title="Isbells - Heart Attacks [Official Music Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
