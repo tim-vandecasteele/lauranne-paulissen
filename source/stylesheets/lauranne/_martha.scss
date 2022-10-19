@@ -16,6 +16,10 @@ body.martha {
 
   h2 {
     margin-top: 0;
+
+    img {
+      max-width: 100%;
+    }
   }
 
   .container {
@@ -65,7 +69,6 @@ body.martha {
     .quote {
       font-weight: bold;
       font-size: 2em;
-      font-family: 'Marcellus', serif;
     }
 
     .author {
@@ -87,6 +90,19 @@ body.martha {
       font-weight: normal;
       color: white;
       text-decoration: underline;
+    }
+  }
+
+  @media only screen and (max-width: 768px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    tr {
+      margin-bottom: 20px;
     }
   }
 
