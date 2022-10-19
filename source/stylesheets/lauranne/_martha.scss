@@ -2,6 +2,10 @@ body.martha {
   text-color: white;
   background-color: #efa59a;
 
+  .header-primary .navigation {
+    background-color: #efa59a;
+  }
+
   .header-primary .navigation a {
     color: white;
   }
@@ -30,9 +34,11 @@ body.martha {
     padding: 0;
   }
 
-  .description {
-    column-gap: 20px;
-    column-count: 2;
+  @media only screen and (min-width: 768px) {
+    .description {
+      column-gap: 20px;
+      column-count: 2;
+    }
   }
 
   .credits {
@@ -46,12 +52,8 @@ body.martha {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    // margin: 0px auto;
-    // background: #7986cb;
     min-height: 450px;
     background-image: image-url("/images/martha/action.jpg");
-    // background-repeat: no-repeat;
-    // background-size:100% 100%;
   }
 
   .quotation {
@@ -63,6 +65,7 @@ body.martha {
     .quote {
       font-weight: bold;
       font-size: 2em;
+      font-family: 'Marcellus', serif;
     }
 
     .author {
@@ -121,6 +124,7 @@ body.martha {
 
     img {
       max-width: 100%;
+      padding: 10px;
     }
   }
 
