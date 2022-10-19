@@ -1,0 +1,134 @@
+body.martha {
+  text-color: white;
+  background-color: #efa59a;
+
+  .header-primary .navigation {
+    background-color: #efa59a;
+  }
+
+  .header-primary .navigation a {
+    color: white;
+  }
+
+  h1 img{
+    max-width: 100%;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .row {
+    padding: 30px;
+  }
+
+  .row.header {
+    padding-top: 0;
+  }
+
+  .clean {
+    padding: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .description {
+      column-gap: 20px;
+      column-count: 2;
+    }
+  }
+
+  .credits {
+    padding-inline-start: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .full-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    background-image: image-url("/images/martha/action.jpg");
+  }
+
+  .quotation {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .quote {
+      font-weight: bold;
+      font-size: 2em;
+      font-family: 'Marcellus', serif;
+    }
+
+    .author {
+      text-transform: uppercase;
+    }
+  }
+
+  .tickets {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 1.4em;
+
+    td {
+      padding-bottom: 7px;
+      padding-right: 35px;
+    }
+
+    a {
+      font-weight: normal;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .light-purple {
+    background-color: #b0b6e6;
+    color: #e3d572;
+
+    p {
+      font-weight: bold;
+      color: #fff6b4;
+      font-size: 1em;
+      line-height: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .yellow {
+    background-color: #e3d572;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .dark-purple {
+    background-color: #c063ef;
+    color: white;
+  }
+
+  .white {
+    background-color: white;
+    color: black;
+
+    img {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+}
