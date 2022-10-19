@@ -1,0 +1,100 @@
+body.martha {
+  text-color: white;
+  background-color: #efa59a;
+
+  .header-primary .navigation a {
+    color: white;
+  }
+
+  h1 img{
+    max-width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .row {
+    padding: 30px;
+  }
+
+  .clean {
+    padding: 0;
+  }
+
+  .credits {
+    padding-inline-start: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .quotation {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .quote {
+      font-weight: bold;
+      font-size: 2em;
+    }
+
+    .author {
+      text-transform: uppercase;
+    }
+  }
+
+  .tickets {
+    td {
+      padding: 5px;
+    }
+
+    font-weight: bold;
+    a {
+      font-weight: normal;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .light-purple {
+    background-color: #b0b6e6;
+    color: #e3d572;
+
+    p {
+      font-weight: bold;
+      color: #fff6b4;
+      font-size: 1em;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .yellow {
+    background-color: #e3d572;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .dark-purple {
+    background-color: #c063ef;
+    color: white;
+  }
+
+  .white {
+    background-color: white;
+    color: black;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+}

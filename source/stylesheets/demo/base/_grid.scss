@@ -14,6 +14,14 @@
   @extend %col-md-6;
 }
 
+.col-md-4 {
+  @extend %col-md-4;
+}
+
+.col-md-8 {
+  @extend %col-md-8;
+}
+
 .col-md-offset-3 {
   @extend %col-md-offset-3;
 }
