@@ -24,3 +24,12 @@ meta name="twitter:card" content="summary_large_image"
 meta name="twitter:title" content=title
 meta name="twitter:description" content=description
 meta name="twitter:image" content=(url + image_path(image))
+
+<!-- Google tag (gtag.js) -->
+script async=true src="https://www.googletagmanager.com/gtag/js?id=G-F5CE71Z53Z"
+script
+  | window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F5CE71Z53Z');
