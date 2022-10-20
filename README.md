@@ -42,5 +42,9 @@ $ middleman server
 ### Setting up the CMS
 Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
 
+### Setting up a campaing
+Create a url at https://ga-dev-tools.web.app/campaign-url-builder/
+
+
 ### Trouble?
 [![Gitter](https://badges.gitter.im/netlify/netlify.svg)](https://gitter.im/netlify/NetlifyCMS)
