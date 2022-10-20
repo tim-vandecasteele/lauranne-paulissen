@@ -45,6 +45,10 @@ body.martha {
     }
   }
 
+  .description {
+    padding: 30px;
+  }
+
   .credits {
     padding-inline-start: 0;
     li {
@@ -52,12 +56,16 @@ body.martha {
     }
   }
 
-  .full-image {
+  .full-image, .full-image-left {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 450px;
     background-image: image-url("/images/martha/action.jpg");
+  }
+
+  .full-image-left {
+    background-position: left;
   }
 
   .quotation {
