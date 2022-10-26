@@ -4,7 +4,7 @@ meta content="ie=edge" http-equiv="x-ua-compatible"
 meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"
 
 // Set dynamic and default meta
-- title = current_page.data.title || "Lauranne Paulissen | Actress | Performer"
+- title = current_page.data.title || yield_content(:title).presence || "Lauranne Paulissen | Actress | Performer"
 - description = current_page.data.description || "Homepage of Lauranne Paulissen, actress & performer."
 //Change this to your domain
 - url = "https://brave-hypatia-0b12fd.netlify.com"
