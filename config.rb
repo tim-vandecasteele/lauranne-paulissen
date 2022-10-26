@@ -1,6 +1,8 @@
 #Bootstrap is used to style bits of the demo. Remove it from the config, gemfile and stylesheets to stop using bootstrap
 require "uglifier"
 
+config[:host] = "https://www.laurannepaulissen.com"
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -25,11 +27,11 @@ page '/*.txt', layout: false
 page "/partials/*", layout: false
 page "/admin/*", layout: false
 
-activate :blog do |blog|
-  blog.permalink = "news/{year}/{title}.html"
-  blog.sources = "posts/{title}.html"
-  blog.layout = "news-detail"
-end
+# activate :blog do |blog|
+#   blog.permalink = "news/{year}/{title}.html"
+#   blog.sources = "posts/{title}.html"
+#   blog.layout = "news-detail"
+# end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -37,14 +39,6 @@ end
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
-# proxy product.yml files to product.html 
-data.products.each do |_filename, product|
-  # product is an array: [filename, {data}]
-  proxy "/product/#{product[:title].parameterize}/index.html", "product.html", 
-  locals: {product: product}, 
-  layout: 'product-detail',
-  ignore: true
-end
 
 data.theatre.each do |_filename, production|
   # product is an array: [filename, {data}]
