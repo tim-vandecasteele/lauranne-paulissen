@@ -167,13 +167,13 @@ body.martha {
       left: 5%;
     }
 
-    .btn {
+    .btn, .btn:visited {
       color: color(srgb 0.9046 0.995 0.168);
       background-color: #c063ef;
       border-color: #e4d473;
       font-weight: bold;
       font-size: 2em;
-      rotate: -20deg;
+      transform: rotate(-20deg);
       border-radius: 20px;
       &:hover {
         color: #c063ef;
