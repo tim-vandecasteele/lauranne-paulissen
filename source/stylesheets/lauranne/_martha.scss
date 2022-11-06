@@ -183,6 +183,24 @@ body.martha {
     }
   }
 
+  .up {
+    display: none;
+  }
+
+  .left {
+    display: inline;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .up {
+      display: inline;
+    }
+
+    .left {
+      display: none;
+    }
+  }
+
   p {
     text-align: justify;
   }
