@@ -7,6 +7,8 @@ description: Collectief Wyf brengt Martha de Krankzinnige, een stuk uit het verg
 section
   .container
     .row.header
+      div.game-button
+        a.btn href="#wedstrijd" WIN DUOTICKETS!
       h1
         = image_tag '/images/martha/martha_titel.png', alt: "Martha de Krankzinnige"
 
@@ -82,6 +84,7 @@ section
         ul.credits
           li Katarina Antunović: spel
           li Edith Cassiers: coach, spel
+          li Janneke Donkersloot: techniek
           li Annick Guffens: affiche, foto
           li Véronique Hendriks: affiche, vormgeving, scenografie
           li Lauranne Paulissen: concept, spel
@@ -95,4 +98,32 @@ section
           li met de steun van: de Vlaamse overheid, Stad Antwerpen, Koninklijk Conservatorium Antwerpen
           li residentieplekken: CAMPO, GC De Kriekelaar, Monty, Cultuurhuis de Warande, WALPURGIS
           li artistiek advies: Esther de Koning, Andrew James Van Ostade
-          li met dank aan: Stavros D. Tarlizos, Andrew James Van Ostade
+          li met dank aan: Roel Jansen, Stavros D. Tarlizos
+
+    .row.clean
+      .col-md-6.clean.full-image.full-image-top style=background_image('/images/martha/scene.jpg')
+      .col-md-6.form
+        h2
+          a name="wedstrijd"
+          = image_tag '/images/martha/wedstrijd.png', alt: "wedstrijd"
+
+        p Win een duoticket voor Martha de Krankzinnige in Ekeren (252CC) op 12 november om 20:30!
+
+        form name="wedstrijd-martha" netlify="true" action="/martha-de-krankzinnige-game-success/" method="POST"
+          .form-group
+            input.form-control type="text" placeholder="Naam" name="naam"
+
+          .form-group
+            input.form-control type="email" placeholder="Email" name="email"
+          .form-group
+            label Beschrijf wat je ziet op deze foto in 3 woorden <i>(meest creatieve antwoord wint)</i>
+            textarea.form-control placeholder="Antwoord" name="antwoord" rows="2"
+
+          .form-group
+            label Schiftingsvraag: hoeveel mensen hebben tegen 10 november 12:00 meegedaan aan deze wedstrijd?
+            input.form-control type="text" placeholder="Aantal deelnemers" name="deelnemers"
+
+
+          p en wie weet zie jij dit op 12 november in het echt&mldr;
+
+          button type="submit" class="btn btn-primary" Neem deel!

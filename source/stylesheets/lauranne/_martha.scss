@@ -46,7 +46,7 @@ body.martha {
     }
   }
 
-  .description {
+  .description, .form {
     padding: 30px;
   }
 
@@ -67,6 +67,11 @@ body.martha {
 
   .full-image-left {
     background-position: left;
+  }
+
+  .full-image-top {
+    background-position: top;
+    min-height: 650px;
   }
 
   .quotation {
@@ -151,7 +156,40 @@ body.martha {
     }
   }
 
+  .game-button {
+    position: absolute;
+    top: 10em;
+    left: 10%;
+
+    @media only screen and (max-width: 768px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+      top: 5em;
+      left: 5%;
+    }
+
+    .btn {
+      color: color(srgb 0.9046 0.995 0.168);
+      background-color: #c063ef;
+      border-color: #e4d473;
+      font-weight: bold;
+      font-size: 2em;
+      rotate: -20deg;
+      border-radius: 20px;
+      &:hover {
+        color: #c063ef;
+        background-color: color(srgb 0.9046 0.995 0.168);
+        border-color: #c063ef;
+      }
+    }
+  }
+
   p {
     text-align: justify;
+  }
+
+  .btn-primary {
+    color: black;
+    background-color: #e4d473;
+    border-color: #e4d473;
   }
 }
