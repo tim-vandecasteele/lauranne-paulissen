@@ -164,6 +164,13 @@ body.martha {
     max-width: 850px;
   }
 
+  @media(max-width: 991px) { /* <== You can change this break point as per your  needs */
+    .reverse-columns {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+  }
+
   .white {
     background-color: white;
     color: black;
