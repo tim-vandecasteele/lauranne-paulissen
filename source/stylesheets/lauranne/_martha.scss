@@ -149,6 +149,21 @@ body.martha {
     color: white;
   }
 
+  .orange {
+    background-color: #ffa263;
+  }
+
+  .video {
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .youtube-container {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 850px;
+  }
+
   .white {
     background-color: white;
     color: black;
