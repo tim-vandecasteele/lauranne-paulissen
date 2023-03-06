@@ -235,4 +235,15 @@ body.martha {
     background-color: #e4d473;
     border-color: #e4d473;
   }
+
+  .press {
+    a {
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+
+    blockquote {
+      font-size: 1em;
+    }
+  }
 }
