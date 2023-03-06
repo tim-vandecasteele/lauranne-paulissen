@@ -77,6 +77,13 @@ body.martha {
     min-height: 650px;
   }
 
+  .call-to-action {
+    padding: 25px;
+    p {
+      margin-top: 25px;
+    }
+  }
+
   .quotation {
     text-align: center;
     vertical-align: middle;
@@ -178,6 +185,19 @@ body.martha {
     img {
       max-width: 100%;
       padding: 10px;
+    }
+  }
+
+  .prominent-button.btn, .prominent-button.btn:visited {
+    color: color(srgb 0.9046 0.995 0.168);
+    background-color: #c063ef;
+    border-color: #e4d473;
+    font-weight: bold;
+    border-radius: 10px;
+    &:hover {
+      color: #c063ef;
+      background-color: color(srgb 0.9046 0.995 0.168);
+      border-color: #c063ef;
     }
   }
 
