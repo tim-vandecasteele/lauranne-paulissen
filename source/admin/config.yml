@@ -5,6 +5,8 @@ backend:
 media_folder: source/images/uploads
 public_folder: /images/uploads
 
+publish_mode: editorial_workflow
+
 collections:
   - name: theatre
     label: Theatre
@@ -15,7 +17,7 @@ collections:
     slug: '{{title}}'
     fields:
       - {label: Title, name: title, widget: string}
-      - {label: Date, name: date, widget: datetime}
+      - {label: Date, name: date, widget: datetime, date_format: "YYYY-MM-DD"}
       - {label: Actors, name: actors, widget: string}
       - {label: Link, name: link, widget: string}
       - {label: Producers, name: producers, widget: string}
