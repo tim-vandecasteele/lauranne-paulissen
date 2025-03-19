@@ -6,14 +6,19 @@ media_folder: source/images/uploads
 public_folder: /images/uploads
 
 collections:
-  - name: blog
-    label: Blog
-    folder: source/posts/
-    extension: .html.md
-    format: frontmatter
+  - name: theatre
+    label: Theatre
+    folder: data/theatre/
+    extension: .yml
+    format: yaml
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    slug: '{{title}}'
     fields:
       - {label: Title, name: title, widget: string}
-      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Date, name: date, widget: datetime}
+      - {label: Actors, name: actors, widget: string}
+      - {label: Link, name: link, widget: string}
+      - {label: Producers, name: producers, widget: string}
+      - {label: Front Image, name: front_image, widget: image}
+      - {label: Images, name: images, widget: list, field: {label: Image, name: path, widget: image}}
       - {label: Body, name: body, widget: markdown}
