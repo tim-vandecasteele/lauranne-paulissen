@@ -16,6 +16,10 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :tailwind do |config|
+  config.config_path = "tailwind.config.js"
+end
+
 activate :livereload
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -26,6 +30,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 page "/partials/*", layout: false
 page "/admin/*", layout: false
+
+page "/martha-de-krankzinnige.html", layout: "layout-martha"
 
 # activate :blog do |blog|
 #   blog.permalink = "news/{year}/{title}.html"
@@ -40,7 +46,7 @@ page "/admin/*", layout: false
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 
-data.theatre.each do |_filename, production|
+@app.data.theatre.each do |_filename, production|
   # product is an array: [filename, {data}]
   proxy "/theatre/#{production[:title].parameterize}/index.html", "production.html",
   locals: {production: production},
@@ -48,7 +54,7 @@ data.theatre.each do |_filename, production|
   ignore: true
 end
 
-data.film.each do |_filename, production|
+@app.data.film.each do |_filename, production|
   # product is an array: [filename, {data}]
   proxy "/film/#{production[:title].parameterize}/index.html", "production.html",
   locals: {production: production},
@@ -89,7 +95,8 @@ activate :asset_hash
 
 configure :build do
   # Minify css on build
-  activate :minify_css
+  # disabled for now because it conflicts with tailwind
+  # activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript, ignore: "**/admin/**", compressor: ::Uglifier.new(mangle: true, compress: { drop_console: true }, output: {comments: :none})
