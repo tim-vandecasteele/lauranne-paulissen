@@ -7,7 +7,20 @@
   </head>
 
   <body class="<%= current_page.data.body_class %>">
-    <%= partial 'partials/shared/header-primary' %>
+    <div class="flex justify-between items-center py-2 px-4">
+      <div>
+        <%= link_to 'MARTHA DE KRANKZINNIGE', 'martha-de-krankzinnige.html', class: 'font-light' %>
+      </div>
+
+      <div>
+        LAURANNE<br/>PAULISSEN
+      </div>
+      <div>
+        <%= link_to 'Insta', 'https://www.instagram.com/__lauranne/' %>
+        <%= link_to 'Contact', 'contact.html' %>
+      </div>
+    </div>
+
 
     <div class="mx-auto max-w-7xl">
       <%= yield %>

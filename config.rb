@@ -95,7 +95,8 @@ activate :asset_hash
 
 configure :build do
   # Minify css on build
-  activate :minify_css
+  # disabled for now because it conflicts with tailwind
+  # activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript, ignore: "**/admin/**", compressor: ::Uglifier.new(mangle: true, compress: { drop_console: true }, output: {comments: :none})
