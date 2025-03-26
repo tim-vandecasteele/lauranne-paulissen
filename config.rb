@@ -16,6 +16,13 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :images do |images|
+  images.optimize = true
+  images.image_optim = {
+    svgo: false
+  }
+end
+
 activate :tailwind do |config|
   config.config_path = "tailwind.config.js"
 end
