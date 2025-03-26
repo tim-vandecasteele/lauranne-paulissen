@@ -18,6 +18,7 @@ end
 
 activate :images do |images|
   images.optimize = true
+  images.ignore_original = true
   images.image_optim = {
     svgo: false
   }
