@@ -1,0 +1,45 @@
+---
+title: Lauranne Paulissen | Actrice | Theatermaker
+---
+
+<div class="mx-auto w-full border-b-[12px] border-[#FFEBF4]">
+  <img src="<%= image_path(data.pages.home.hero.image) %>" alt="Lauranne Paulissen" class="w-full">
+</div>
+
+
+<div class="text-center text-2xl pt-12">
+  VOLGENDE VOORSTELLINGEN
+</div>
+
+<div class="px-4 mt-4">
+  <table class="w-full">
+    <% data.pages.martha.performances.select { |performance| performance.date && performance.date > Date.today }.sort_by { |performance| performance.date }.each do |performance| %>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4">
+          <span class="font-semibold mr-2"><%= performance.date.strftime("%d.%m.%Y") %></span>
+          <span>Martha de Krankzinnige - <%= performance.time %> <%= performance.venue %></span>
+        </td>
+        <td class="text-right px-4"><% if performance.link.present? %><a href="<%= performance.link %>">tickets</a><% end %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+
+
+
+<div class="text-center text-2xl pt-12">
+  PROJECTEN
+</div>
+
+<div class="mt-4">
+  <div class="bg-[#FFEBF4] rounded-[20px] px-8 py-4 flex">
+    <div class="">
+    </div>
+
+    <div class="flex-grow">
+      Repertoire theatre is at odds with the current diversity debate. The texts and the portrayal of those pieces on stage, are often not inclusive enough: besides an acute shortage for complex roles for minorities, other identity markers (ability, age, ethnicity, skin color, gender,..) aren’t always considered when working with the dramatic repertoire. However, in the wake of #MeToo and Black Lives Matter a change seems to occur: art schools and the theatre landscape are looking for a thorough reformation of repertoire theatre according to the needs of our current society.
+    </div>
+  </div>
+</div>
+
