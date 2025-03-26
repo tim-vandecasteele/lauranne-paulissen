@@ -17,8 +17,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :images do |images|
-  images.optimize = true
-  images.ignore_original = true
+  images.optimize = false
   images.image_optim = {
     svgo: false
   }
