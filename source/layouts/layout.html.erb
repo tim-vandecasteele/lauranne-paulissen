@@ -12,12 +12,17 @@
         <%= link_to 'MARTHA DE KRANKZINNIGE', 'martha-de-krankzinnige.html', class: 'font-light' %>
       </div>
 
-      <div class="text-center order-1 md:order-2">
-        LAURANNE<br/>PAULISSEN
-      </div>
+      <h1 class="text-center order-1 md:order-2">
+        <span class="sr-only">Lauranne Paulissen</span>
+        <%= image_tag 'uploads/logo.png', resize: '300x300', alt: 'Lauranne Paulissen', class: 'h-12 mx-auto' %>
+      </h1>
       <div class="text-center md:text-right md:pr-8 order-2 md:order-3">
-        <%= link_to 'Insta', 'https://www.instagram.com/__lauranne/' %>
-        <%= link_to 'Contact', 'contact.html' %>
+        <a href="https://www.instagram.com/__lauranne/" class="inline-block align-middle mx-2">
+          <%= image_tag 'images/social/instagram.svg', alt: 'Instagram', class: 'h-6 mx-auto rounded-md' %>
+        </a>
+        <a href="<%= url_for('contact.html') %>" class="inline-block align-middle mx-2">
+          <%= image_tag 'images/social/mail.svg', alt: 'Mail', class: 'h-6 mx-auto rounded-md' %>
+        </a>
       </div>
     </div>
 
