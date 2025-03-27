@@ -12,10 +12,6 @@ Slim::Engine.set_options shortcut: {
   '#' => { tag: 'div', attr: 'id' }, '.' => { tag: 'div', attr: 'class' }
 }
 
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
-
 activate :images do |images|
   images.optimize = false
   images.image_optim = {

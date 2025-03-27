@@ -7,15 +7,15 @@
   </head>
 
   <body class="<%= current_page.data.body_class %>">
-    <div class="flex justify-between items-center py-2 px-4">
-      <div>
+    <div class="grid grid-cols-1 gap-2 md:grid-cols-3 items-center py-2 px-4 w-full">
+      <div class="md:pl-8 order-3 md:order-1 text-center md:text-left">
         <%= link_to 'MARTHA DE KRANKZINNIGE', 'martha-de-krankzinnige.html', class: 'font-light' %>
       </div>
 
-      <div>
+      <div class="text-center order-1 md:order-2">
         LAURANNE<br/>PAULISSEN
       </div>
-      <div>
+      <div class="text-center md:text-right md:pr-8 order-2 md:order-3">
         <%= link_to 'Insta', 'https://www.instagram.com/__lauranne/' %>
         <%= link_to 'Contact', 'contact.html' %>
       </div>
