@@ -7,7 +7,9 @@ description: Lauranne Paulissen brengt Martha de Krankzinnige, een stuk uit het 
 section
   .container
     .row.header
-      h1
+      div.game-button
+        a.prominent-button.btn.btn-lg href="#speellijst" Speellijst
+      h1 style="position: relative;"
         = image_tag '/images/martha/martha_titel.png', alt: "Martha de Krankzinnige"
       .col-md-8
         div.video
@@ -31,9 +33,9 @@ section
 
       .col-md-5.clean.full-image-left style=background_image('/images/martha/martha_takeout.png')
 
-    .row.dark-purple
+    .row.dark-purple id="speellijst"
       .col-md-12
-        h2 = image_tag '/images/martha/playlist.png', alt: "playlist"
+        h2 = image_tag '/images/martha/playlist.png', alt: "speellijst"
 
         table.tickets
           tr
